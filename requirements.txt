@@ -1,0 +1,6 @@
+selenium
+webdriver-manager
+pyPOM
+pytest
+pytest_bdd
+pytest-html
