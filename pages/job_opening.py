@@ -24,10 +24,10 @@ class JobOpening(BasePage):
 
     @property
     def back_to_jobs_list(self):
-        locator = Locator(by=By.XPATH, value="(//a[@ng-click='goBack()'])")
+        locator = Locator(by=By.XPATH, value="//a[@class='nav-back']")
         return BaseElement(driver=self.driver, locator=locator)
 
     @property
     def jobs_list(self):
-        locator = Locator(by=By.XPATH, value="(//a[contains(@ng-if,'column.config.getTextCellLink')])")
+        locator = Locator(by=By.XPATH, value="//a[contains(@ng-if,'column.config.getTextCellLink')]")
         return BaseElement(driver=self.driver, locator=locator)
