@@ -1,17 +1,17 @@
-## WorksuiteTasks
+## Worksuite
 ### Table of contents
 * [General info](#general-info)
 * [Technologies](#techologies)
 * [Setup](#setup)
 
 ### General info
-This project contains Worksuites' exercises using selenium in a POM structure
+This project contains Worksuites' tasks using Selenium in a POM structure
 
 ### Technologies
 Project is created with:
 * Python version: 3.10
 * Selenium WebDriver version: 4.10
-* pytest version: 6.2.5
+* pytest version: 7.0.1
 
 ### Setup
 To run this project on Windows, install locally: 
