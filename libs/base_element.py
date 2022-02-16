@@ -33,5 +33,5 @@ class BaseElement(object):
         return self.web_element.clear
 
     @property
-    def get_text(self):
+    def text(self):
         return self.web_element.text
