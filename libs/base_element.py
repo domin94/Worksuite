@@ -1,7 +1,7 @@
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
 
-#tuu
+
 class BaseElement(object):
     def __init__(self, driver, locator):
         self.driver = driver
@@ -12,8 +12,9 @@ class BaseElement(object):
         self.scroll()
 
     def find(self):
-        element = WebDriverWait(self.driver, 10).until(ec.element_to_be_clickable(self.locator))
+        element = WebDriverWait(self.driver, 10).until(ec.visibility_of_element_located(locator=self.locator))
         self.web_element = element
+        return None
 
     def scroll(self):
         self.driver.execute_script("arguments[0].scrollIntoView({block: 'center', inline: 'center'});", self.web_element)
