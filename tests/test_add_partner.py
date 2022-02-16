@@ -2,6 +2,8 @@ from libs.functions.searching_through_partners_list import *
 from libs.helpers.random_staff_generators import *
 from pages.add_partner import AddPartner
 
+'''Test adds a new partner and assets if it appears on the all partners list'''
+
 
 def test_add_partner(browser):
     add_partner_form = AddPartner(browser)

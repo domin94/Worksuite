@@ -2,6 +2,8 @@ from libs.base_page import BasePage
 from libs.helpers.random_staff_generators import random_word
 from pages.job_opening import JobOpening
 
+'''Test adds a new job opening and asserts it on the all job opening lists'''
+
 
 def test_add_job_opening(browser):
     browser.get(BasePage.base_URI + "/marketplace/job-openings/list/?archived=false")
